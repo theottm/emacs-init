@@ -85,7 +85,7 @@ e
 
 
 #+END_SRC
-*** misc tools
+*** utilities
 #+BEGIN_SRC emacs-lisp
 ;; emacs init file keybinding
 (defun find-init ()
@@ -116,7 +116,7 @@ e
     (setq custom-file "~/code/emacs/inits/teddd-emacs/custom.el")
     (load custom-file)
 #+END_SRC
-*** cool
+*** Cool stuff
 **** COMMENT welcome message
 ***** first
 #+BEGIN_SRC emacs-lisp
