@@ -1494,6 +1494,8 @@ WHAT entry will also be removed."
 (setq global-magit-file-mode t)
 
 (add-hook 'after-save-hook 'magit-after-save-refresh-status)
+(setq magit-auto-revert-mode nil)
+(setq global-auto-revert-mode t)
 #+END_SRC
 *** smart hungry whitespace
 #+BEGIN_SRC emacs-lisp
