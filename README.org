@@ -1,0 +1,5 @@
+To use it, put this in your .emacs :
+#+BEGIN_SRC emacs-lisp
+(setq init-file "~/path/to/this/repo/init.org")
+(org-babel-load-file init-file)
+#+END_SRC
