@@ -219,7 +219,7 @@ e
  (kbd "C-h C-l")
  (lambda () (interactive) (display-buffer ilog-buffer-name)))
 #+END_SRC
-*** dashbord
+*** COMMENT dashbord
 :PROPERTIES:
 :CREATED:  <2019-01-13 dim. 22:48>
 :END:
@@ -2321,4 +2321,5 @@ With this config, you can even use it in term (terminal emulation) and enjoy new
 :PROPERTIES:
 :CREATED:  [2019-03-14 Thu 07:50]
 :END:
+
 
