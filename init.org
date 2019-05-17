@@ -90,7 +90,7 @@ e
 ;; emacs init file keybinding
 (defun find-init ()
   (interactive)
-  (find-file "~/code/emacs/org-init/init.org"))
+  (find-file init-file))
 (global-set-key "\C-ce" 'find-init)
 ;; don't open *Scratch* buffer on opening
 (setq initial-scratch-message nil)
