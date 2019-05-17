@@ -17,7 +17,7 @@
 ;; emacs init file keybinding
 (defun find-init ()
   (interactive)
-  (find-file "~/code/emacs/org-init/init.org"))
+  (find-file init-file))
 (global-set-key "\C-ce" 'find-init)
 ;; don't open *Scratch* buffer on opening
 (setq initial-scratch-message nil)
@@ -38,7 +38,7 @@
 ;;(set-frame-name "EMACS <3")
 (setq frame-title-format "%b")
 
-(setq custom-file "~/.emacs.d/emacs-custom.el")
+(setq custom-file "~/code/emacs/inits/teddd-emacs/custom.el")
 (load custom-file)
 
 (add-to-list 'load-path "~/.emacs.d/handoff")
@@ -104,27 +104,6 @@
 (global-set-key
  (kbd "C-h C-l")
  (lambda () (interactive) (display-buffer ilog-buffer-name)))
-
-(require 'dashboard)
-(dashboard-setup-startup-hook)
-(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
-
-;; Set the title
-(setq dashboard-banner-logo-title "Welcome to Emacs Dashboard")
-;; Set the banner
-(setq dashboard-startup-banner 'logo)
-
-;; (setq dashboard-items '((projects . 5)
-;;                         (recents  . 5)
-;;                         (agenda . 5)
-;;                         (registers . 5)))
-
-;; (defun dashboard-insert-custom (list-size)
-;;   (insert "Custom text"))
-;; (add-to-list 'dashboard-item-generators  '(custom . dashboard-insert-custom))
-;; (add-to-list 'dashboard-items '(custom) t)
-
-;; (setq show-week-agenda-p t)
 
 (defun external-term()
   "Open simple terminal at the current buffer working dir in a window out of emacs"
