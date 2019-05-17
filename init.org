@@ -994,6 +994,10 @@ https://gitlab.com/emacs-stuff/indent-tools/
 (fset 'org-beginning-of-headline
    "\C-c\C-b\C-c\C-f")
 (define-key org-mode-map (kbd "C-c ù") 'org-beginning-of-headline)
+(define-key org-mode-map (kbd "C-c <left>") 'windmove-left)
+(define-key org-mode-map (kbd "C-c <right>") 'windmove-right)
+(define-key org-mode-map (kbd "C-c <C-right>") 'org-shiftright)
+(define-key org-mode-map (kbd "C-c <C-left>") 'org-shiftleft)
 #+END_SRC
 
 *** agenda
