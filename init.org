@@ -491,6 +491,11 @@ e
   (find-file "~/.zshrc"))
 (define-key teddd-map (kbd "z") 'find-zshrc)
 
+(defun find-zsh-aliases ()
+  (interactive)
+  (find-file "~/.zsh_aliases"))
+(define-key teddd-map (kbd "a") 'find-zsh-aliases)
+
 
 (defun facebook-events-open-browser()
   (interactive)
