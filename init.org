@@ -1487,11 +1487,13 @@ WHAT entry will also be removed."
 #+END_SRC
 *** magit
 #+BEGIN_SRC emacs-lisp
-    ;; Git in Emacs
-    (require 'magit)
-    (global-set-key (kbd "C-x g") 'magit)
-    (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
-    (setq global-magit-file-mode t)
+;; Git in Emacs
+(require 'magit)
+(global-set-key (kbd "C-x g") 'magit)
+(global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
+(setq global-magit-file-mode t)
+
+(add-hook 'after-save-hook 'magit-after-save-refresh-status)
 #+END_SRC
 *** smart hungry whitespace
 #+BEGIN_SRC emacs-lisp
