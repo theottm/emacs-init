@@ -113,7 +113,7 @@ e
 #+END_SRC
 *** custom set options
 #+BEGIN_SRC emacs-lisp
-    (setq custom-file "~/.emacs.d/emacs-custom.el")
+    (setq custom-file "~/code/emacs/inits/teddd-emacs/custom.el")
     (load custom-file)
 #+END_SRC
 *** cool
