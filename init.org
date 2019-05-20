@@ -1670,7 +1670,7 @@ fine tune the conditions to differenciate new files under vc and files out. Use 
 	)
   )
 
-(add-hook 'after-save-hook 'my-commit-on-save)
+;(add-hook 'after-save-hook 'my-commit-on-save)
 #+END_SRC
 
 *** Projectile
