@@ -1456,6 +1456,7 @@ WHAT entry will also be removed."
 (global-set-key (kbd "M-<down>") 'move-line-down)
 ;; undo tree
 (global-undo-tree-mode)
+(setq undo-tree-auto-save-history t)
 ;; indent
 (global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "C-c i") 'indent-region)
